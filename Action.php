@@ -10,6 +10,9 @@ class ExtraVerification_Action extends Typecho_Widget implements Widget_Interfac
 {
 	public function action()
 	{
+		$user = Typecho_Widget::widget('Widget_User');
+        	$user->pass('subscriber');
+		
 		$db = Typecho_Db::get();
 		$prefix = $db->getPrefix();
 		$options = Typecho_Widget::widget('Widget_Options');
