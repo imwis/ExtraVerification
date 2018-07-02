@@ -80,7 +80,7 @@ class ExtraVerification_GoogleAuthenticator
 	if(isset($title)) {
                 $urlencoded .= urlencode('&issuer='.urlencode($title));
         }
-        return 'https://chart.googleapis.com/chart?chs=200x200&chld=M|0&cht=qr&chl='.$urlencoded.'';
+        return 'https://chart.googleapis.com/chart?chs=300x300&chld=M|1&cht=qr&chl='.$urlencoded.'';
     }
 
     /**
